@@ -87,16 +87,18 @@ export default function ProjectColumnDropdown({
               {screenshots.map((screenshot) => (
                 <div
                   key={`${screenshot.src}-${screenshot.alt}`}
-                  className="flex aspect-[12/6] items-center justify-center border bg-card p-3 sm:p-5 lg:p-6"
+                  className="relative aspect-[12/6] border bg-card"
                 >
-                  <Image
-                    src={screenshot.src}
-                    alt={screenshot.alt}
-                    width={800}
-                    height={500}
-                    sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 33vw"
-                    className="max-h-full max-w-full object-contain"
-                  />
+                  {/* Padding lives here as inset so `fill` has a clean relative ancestor */}
+                  <div className="absolute inset-3 sm:inset-5 lg:inset-6">
+                    <Image
+                      src={screenshot.src}
+                      alt={screenshot.alt}
+                      fill
+                      sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 33vw"
+                      className="object-contain"
+                    />
+                  </div>
                 </div>
               ))}
             </div>

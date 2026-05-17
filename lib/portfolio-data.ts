@@ -60,9 +60,9 @@ export const projects: Project[] = [
     description:
       "Full-stack fitness management product focused on backend architecture, secure JWT authentication, and mobile-first workout program engineering with Node.js, Express, PostgreSQL, Prisma, React Native, and Expo.",
     screenshots: [
-      { src: "/png/batum1.png", alt: "screenshot placeholder" },
-      { src: "/png/batum2.png", alt: "screenshot placeholder" },
-      { src: "/png/batum3.png", alt: "screenshot placeholder" },
+      { src: "/png/Batum1.png", alt: "screenshot placeholder" },
+      { src: "/png/Batum2.png", alt: "screenshot placeholder" },
+      { src: "/png/Batum3.png", alt: "screenshot placeholder" },
       { src: "/png/batum4.png", alt: "screenshot placeholder" },
     ],
   },

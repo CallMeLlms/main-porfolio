@@ -1,9 +1,11 @@
-
-
-export default function MainViewlayout ({children} : {children: React.ReactNode}){
-    return (
-        <div className="bg-dark">
-            {children}
-        </div>
-    )
+export default function MainViewLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <div className="min-h-screen bg-background text-foreground">
+      {children}
+    </div>
+  );
 }

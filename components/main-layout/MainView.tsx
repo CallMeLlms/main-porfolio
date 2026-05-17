@@ -10,7 +10,7 @@ export default function MainView() {
     <main className="min-h-screen">
       <nav
         aria-label="Primary"
-        className="border-b bg-background px-4 py-3 sm:px-8"
+        className="border-b bg-background/70 px-4 py-3 backdrop-blur-[1px] sm:px-8"
       >
         <div className="flex items-center justify-between gap-4">
           <a

@@ -4,7 +4,7 @@ export default function MainViewLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="paper-background min-h-screen text-foreground">
       {children}
     </div>
   );

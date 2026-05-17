@@ -77,6 +77,19 @@ body {
   font-family: var(--font-sans), sans-serif;
 }
 
+.paper-background {
+  background-color: var(--background);
+  background-image:
+    linear-gradient(
+      rgb(255 255 255 / 0.78),
+      rgb(255 255 255 / 0.78)
+    ),
+    url("/jpg/paper-one.jpg");
+  background-position: top center;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+}
+
 :root {
   --background: oklch(0.9761 0 0);
   --foreground: oklch(0 0 0);

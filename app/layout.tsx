@@ -1,10 +1,5 @@
 import type { Metadata } from "next";
 import { Architects_Daughter } from "next/font/google";
-// Section 1 fonts
-import { Newsreader, Mea_Culpa, Style_Script} from "next/font/google";
-
-// Section 2 fonts
-import { Inter } from "next/font/google";
 
 import "./globals.css";
 
@@ -26,7 +21,6 @@ const fontMono = Architects_Daughter({
   weight: "400",
 });
 
-// ${fontSans.variable} ${fontSerif.variable} ${fontMono.variable}
 export const metadata: Metadata = {
   title: "Portfolio",
   description: "A personal portfolio built with Next.js.",

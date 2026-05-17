@@ -6,7 +6,7 @@ export default function MainViewLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="paper-background min-h-screen text-foreground">
+    <div className="paper-background min-h-screen overflow-x-hidden text-foreground">
       <CustomCursor />
       {children}
     </div>

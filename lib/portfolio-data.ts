@@ -8,6 +8,7 @@ export type ProjectScreenshot = {
 export type Project = {
   title: string;
   status: ProjectStatus;
+  year: string;
   description: string;
   screenshots: ProjectScreenshot[];
   href?: string;
@@ -35,6 +36,7 @@ export const projects: Project[] = [
   {
     title: "MathSync",
     status: "Development",
+    year: "2026",
     description:
       "4th year capstone project. Lead Mobile Developer for a capstone from Oct 2025 to May 2026, building a cross-platform React Native and Expo app with Zustand, SQLite, AsyncStorage, Axios.",
     screenshots: [
@@ -46,6 +48,7 @@ export const projects: Project[] = [
   {
     title: "National Health Workforce Registry (NHWR)",
     status: "Internship",
+    year: "2026",
     description:
       "Software Developer Intern at Moodlearning from Oct 2025 to Apr 2026, contributing 500 hours to a government healthcare workforce registry with Laravel, JavaScript, Blade, and MariaDB.",
     screenshots: [
@@ -57,6 +60,7 @@ export const projects: Project[] = [
   {
     title: "BatumBAKAL",
     status: "Development",
+    year: "2026",
     description:
       "Full-stack fitness management product focused on backend architecture, secure JWT authentication, and mobile-first workout program engineering with Node.js, Express, PostgreSQL, Prisma, React Native, and Expo.",
     screenshots: [
@@ -64,6 +68,18 @@ export const projects: Project[] = [
       { src: "/png/Batum2.png", alt: "screenshot placeholder" },
       { src: "/png/Batum3.png", alt: "screenshot placeholder" },
     ],
+  },
+   {
+    title: "Bloggemi",
+    status: "Development",
+    year: "2025",
+    description:
+      "Small fun project meant to generally learn about react, gemini and supabase funamentals stuff. Currenly un-maintained back when everything was made with love <3",
+    screenshots: [
+      { src: "/png/Bloggemi1.png", alt: "screenshot placeholder" },
+      { src: "/png/Bloggemi2.png", alt: "screenshot placeholder" },
+    ],
+    href: 'https://bloggemi.vercel.app/',
   },
   // {
   //   title: "API Toolkit",

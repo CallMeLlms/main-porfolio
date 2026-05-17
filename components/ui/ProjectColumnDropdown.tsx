@@ -3,8 +3,14 @@
 import Image from "next/image";
 import { useId, useState } from "react";
 import { ChevronDown, ExternalLink } from "lucide-react";
+import { DM_Mono, Newsreader, Mea_Culpa } from "next/font/google";
 
 import { cn } from "@/lib/utils";
+
+const fontSans = DM_Mono({ subsets: ["latin"], weight: "400" });
+const fontSerif = Newsreader({ subsets: ["latin"] });
+const fontScript = Mea_Culpa({ subsets: ["latin"], weight: "400" });
+
 
 type ProjectColumnDropdownProps = {
   title: string;
@@ -38,10 +44,10 @@ export default function ProjectColumnDropdown({
         className="group flex min-h-18 w-full items-center justify-between gap-4 px-0 py-5 text-left transition-colors hover:bg-muted/40 focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
       >
         <span className="flex min-w-0 flex-col gap-1">
-          <span className="truncate text-xl font-black sm:text-2xl">
+          <span className={`${fontSans.className} truncate text-xl sm:text-4xl`}>
             {title}
           </span>
-          <span className="text-xs font-bold uppercase tracking-wide text-muted-foreground">
+          <span className={`${fontSans.className} text-xs font-bold uppercase tracking-wide text-muted-foreground`}>
             {status}
           </span>
         </span>
@@ -65,13 +71,13 @@ export default function ProjectColumnDropdown({
         <div className="overflow-hidden">
           <div className="grid gap-6 pb-6">
             <div
-              className="grid gap-3 sm:grid-cols-2"
+              className="grid gap-3 sm:grid-cols-3"
               aria-label={`${title} screenshots`}
             >
               {screenshots.map((screenshot) => (
                 <div
                   key={`${screenshot.src}-${screenshot.alt}`}
-                  className="flex aspect-[16/8] items-center justify-center border bg-card p-6"
+                  className="flex aspect-[12/6] items-center justify-center border bg-card p-6"
                 >
                   <Image
                     src={screenshot.src}
@@ -85,7 +91,7 @@ export default function ProjectColumnDropdown({
             </div>
 
             <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
-              <p className="max-w-3xl text-base leading-7 text-muted-foreground">
+              <p className={`${fontSans.className} max-w-3xl text-base leading-7 text-muted-foreground`}>
                 {description}
               </p>
 

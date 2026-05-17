@@ -4,6 +4,12 @@ import {
   projects,
 } from "@/lib/portfolio-data";
 import ProjectColumnDropdown from "../ui/ProjectColumnDropdown";
+import { Inter, Newsreader, Mea_Culpa } from "next/font/google";
+
+
+const fontSans = Inter({ subsets: ["latin"] });
+const fontSerif = Newsreader({ subsets: ["latin"] });
+const fontScript = Mea_Culpa({ subsets: ["latin"], weight: "400" });
 
 export default function MainView() {
   return (
@@ -14,18 +20,17 @@ export default function MainView() {
       >
         <div className="flex items-center justify-between gap-4">
           <a
-            href="#intro"
-            className="text-sm font-bold uppercase tracking-wide text-foreground"
+            className={`${fontSerif.className} text-sm font-bold uppercase tracking-wide text-foreground`}
           >
             {portfolioName}
           </a>
 
-          <div className="flex items-center gap-2 text-sm font-medium">
+          <div className={`${fontSerif.className} flex items-center gap-2 text-sm font-medium`}>
             {navigationItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="border px-3 py-1.5 transition-colors hover:bg-primary hover:text-primary-foreground focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
+                className="px-3 py-1.5"
               >
                 {item.label}
               </a>
@@ -36,16 +41,30 @@ export default function MainView() {
 
       <section
         id="intro"
-        className="flex min-h-screen items-center justify-center border-b px-4 py-20 sm:px-8"
+        className="flex min-h-screen items-center justify-center px-4 py-20 sm:px-8"
       >
-        <div className="w-full">
-          <h1 className="text-center text-5xl font-black leading-[0.95] tracking-normal sm:text-7xl lg:text-8xl">
-            Justine Llamera 
-          </h1>
-          <h1 className="text-center text-5xl font-black leading-[0.95] tracking-normal sm:text-7xl lg:text-8xl">
-            Full stack developer
-          </h1>
+        <div className="w-full flex flex-col items-center gap-4">
+          <div className="flex items-end">
+            <h1 className={`${fontScript.className} text-center text-5xl font-black leading-[0.95] tracking-normal sm:text-7xl lg:text-8xl`}>
+              J
+            </h1>
+            <h1 className={`${fontSerif.className} text-center text-5xl leading-[0.95] tracking-normal sm:text-7xl lg:text-5xl`}>
+              ustine
+            </h1>
+            <h1 className={`${fontScript.className} text-center text-5xl font-black leading-[0.95] tracking-normal sm:text-7xl lg:text-8xl`}>
+              L
+            </h1>
+            <h1 className={`${fontSerif.className} text-center text-5xl leading-[0.95] tracking-normal sm:text-7xl lg:text-5xl`}>
+              lamera
+            </h1>
+          </div>
+             <div className="flex items-end">
+            <h1 className={`${fontSerif.className} text-center text-5xl leading-[0.95] tracking-normal sm:text-7xl lg:text-4xl`}>
+              Full Stack Developer
+            </h1>
+          </div>
         </div>
+  
       </section>
 
       <section
@@ -54,10 +73,12 @@ export default function MainView() {
       >
         <div className="w-full">
           <div className="mb-8 flex items-end justify-between gap-4 border-b pb-4">
-            <h2 className="text-3xl font-black sm:text-5xl">Projects</h2>
-            <p className="text-sm font-medium text-muted-foreground">
-              Selected work
-            </p>
+            <div className="flex items-end">
+
+            <h2 className={`${fontScript.className} text-3xl font-black sm:text-8xl`}>P</h2>
+            <h2 className={`${fontSerif.className} text-2xl sm:text-6xl`}>rojects</h2>
+
+            </div>
           </div>
 
           <div className="divide-y border-y">

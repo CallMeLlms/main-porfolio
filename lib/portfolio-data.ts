@@ -63,7 +63,6 @@ export const projects: Project[] = [
       { src: "/png/Batum1.png", alt: "screenshot placeholder" },
       { src: "/png/Batum2.png", alt: "screenshot placeholder" },
       { src: "/png/Batum3.png", alt: "screenshot placeholder" },
-      { src: "/png/batum4.png", alt: "screenshot placeholder" },
     ],
   },
   // {

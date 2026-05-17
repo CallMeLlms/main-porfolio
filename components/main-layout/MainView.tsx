@@ -40,7 +40,10 @@ export default function MainView() {
       >
         <div className="w-full">
           <h1 className="text-center text-5xl font-black leading-[0.95] tracking-normal sm:text-7xl lg:text-8xl">
-            [NAME], a full stack developer
+            Justine Llamera 
+          </h1>
+          <h1 className="text-center text-5xl font-black leading-[0.95] tracking-normal sm:text-7xl lg:text-8xl">
+            Full stack developer
           </h1>
         </div>
       </section>

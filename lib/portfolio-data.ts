@@ -18,7 +18,7 @@ export type NavigationItem = {
   href: string;
 };
 
-export const portfolioName = "Portfolio Name";
+export const portfolioName = "Llams";
 
 export const navigationItems: NavigationItem[] = [
   {

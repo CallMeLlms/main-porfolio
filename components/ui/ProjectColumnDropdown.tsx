@@ -31,6 +31,7 @@ export default function ProjectColumnDropdown({
     <article>
       <button
         type="button"
+        data-cursor-interactive
         aria-expanded={isOpen}
         aria-controls={contentId}
         onClick={() => setIsOpen((current) => !current)}

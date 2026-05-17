@@ -17,6 +17,8 @@ type ProjectColumnDropdownProps = {
   screenshots: {
     src: string;
     alt: string;
+    width: number;
+    height: number;
   }[];
   href?: string;
 };
@@ -92,10 +94,10 @@ export default function ProjectColumnDropdown({
                   <Image
                     src={screenshot.src}
                     alt={screenshot.alt}
-                    width={800}
-                    height={500}
+                    width={screenshot.width}
+                    height={screenshot.height}
                     sizes="(max-width: 767px) calc(100vw - 2rem), (max-width: 1279px) 50vw, 33vw"
-                    className="h-auto max-h-[70svh] w-full max-w-full object-contain"
+                    className="h-auto max-h-[70svh] w-auto max-w-full object-contain"
                   />
                 </div>
               ))}

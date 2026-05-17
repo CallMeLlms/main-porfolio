@@ -1,47 +1,9 @@
+import {
+  navigationItems,
+  portfolioName,
+  projects,
+} from "@/lib/portfolio-data";
 import ProjectColumnDropdown from "../ui/ProjectColumnDropdown";
-
-const projects = [
-  {
-    title: "Portfolio System",
-    status: "Ongoing" as const,
-    description:
-      "A personal portfolio foundation built around a simple one-page structure and expandable project notes.",
-    screenshots: [
-      { src: "/window.svg", alt: "Portfolio System screenshot placeholder" },
-      { src: "/globe.svg", alt: "Portfolio System responsive view placeholder" },
-    ],
-    href: "#",
-  },
-  {
-    title: "Project Archive",
-    status: "Completed" as const,
-    description:
-      "A structured archive concept for collecting finished builds, experiments, and technical notes in one place.",
-    screenshots: [
-      { src: "/file.svg", alt: "Project Archive screenshot placeholder" },
-      { src: "/window.svg", alt: "Project Archive detail view placeholder" },
-    ],
-    href: "#",
-  },
-  {
-    title: "Dashboard Prototype",
-    status: "Ongoing" as const,
-    description:
-      "A compact interface prototype focused on dense information, reusable components, and clear interaction states.",
-    screenshots: [
-      { src: "/window.svg", alt: "Dashboard Prototype screenshot placeholder" },
-    ],
-  },
-  {
-    title: "API Toolkit",
-    status: "Completed" as const,
-    description:
-      "A backend-oriented helper layer for organizing request handlers, shared utilities, and integration boundaries.",
-    screenshots: [
-      { src: "/file.svg", alt: "API Toolkit screenshot placeholder" },
-    ],
-  },
-];
 
 export default function MainView() {
   return (
@@ -55,22 +17,19 @@ export default function MainView() {
             href="#intro"
             className="text-sm font-bold uppercase tracking-wide text-foreground"
           >
-            Portfolio Name
+            {portfolioName}
           </a>
 
           <div className="flex items-center gap-2 text-sm font-medium">
-            <a
-              href="#"
-              className="border px-3 py-1.5 transition-colors hover:bg-primary hover:text-primary-foreground focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
-            >
-              Github
-            </a>
-            <a
-              href="#"
-              className="border px-3 py-1.5 transition-colors hover:bg-primary hover:text-primary-foreground focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
-            >
-              LinkedIn
-            </a>
+            {navigationItems.map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                className="border px-3 py-1.5 transition-colors hover:bg-primary hover:text-primary-foreground focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
+              >
+                {item.label}
+              </a>
+            ))}
           </div>
         </div>
       </nav>

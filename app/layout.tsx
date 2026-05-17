@@ -1,15 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Architects_Daughter } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const fontSans = Architects_Daughter({
   subsets: ["latin"],
+  variable: "--font-sans",
+  weight: "400",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const fontSerif = Architects_Daughter({
   subsets: ["latin"],
+  variable: "--font-serif",
+  weight: "400",
+});
+
+const fontMono = Architects_Daughter({
+  subsets: ["latin"],
+  variable: "--font-mono",
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -23,11 +31,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" className="h-full">
+      <body
+        className={`${fontSans.variable} ${fontSerif.variable} ${fontMono.variable} flex min-h-full flex-col antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

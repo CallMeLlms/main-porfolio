@@ -63,6 +63,26 @@ export default function ProjectColumnDropdown({
       >
         <div className="overflow-hidden">
           <div className="grid gap-6 pb-6">
+            <div
+              className="grid gap-3 sm:grid-cols-2"
+              aria-label={`${title} screenshots`}
+            >
+              {screenshots.map((screenshot) => (
+                <div
+                  key={`${screenshot.src}-${screenshot.alt}`}
+                  className="flex aspect-[16/8] items-center justify-center border bg-card p-6"
+                >
+                  <Image
+                    src={screenshot.src}
+                    alt={screenshot.alt}
+                    width={800}
+                    height={500}
+                    className="max-h-full max-w-full object-contain"
+                  />
+                </div>
+              ))}
+            </div>
+
             <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
               <p className="max-w-3xl text-base leading-7 text-muted-foreground">
                 {description}
@@ -77,26 +97,6 @@ export default function ProjectColumnDropdown({
                   <ExternalLink aria-hidden="true" className="size-4" />
                 </a>
               ) : null}
-            </div>
-
-            <div
-              className="grid gap-3 sm:grid-cols-2"
-              aria-label={`${title} screenshots`}
-            >
-              {screenshots.map((screenshot) => (
-                <div
-                  key={`${screenshot.src}-${screenshot.alt}`}
-                  className="flex aspect-[16/10] items-center justify-center border bg-card p-6"
-                >
-                  <Image
-                    src={screenshot.src}
-                    alt={screenshot.alt}
-                    width={800}
-                    height={500}
-                    className="max-h-full max-w-full object-contain"
-                  />
-                </div>
-              ))}
             </div>
           </div>
         </div>

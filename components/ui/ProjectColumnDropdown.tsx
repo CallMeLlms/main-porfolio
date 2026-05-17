@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useId, useState } from "react";
 import { ChevronDown, ExternalLink } from "lucide-react";
 
@@ -9,7 +10,10 @@ type ProjectColumnDropdownProps = {
   title: string;
   status: "Ongoing" | "Completed";
   description: string;
-  stack: string[];
+  screenshots: {
+    src: string;
+    alt: string;
+  }[];
   href?: string;
 };
 
@@ -17,7 +21,7 @@ export default function ProjectColumnDropdown({
   title,
   status,
   description,
-  stack,
+  screenshots,
   href,
 }: ProjectColumnDropdownProps) {
   const [isOpen, setIsOpen] = useState(false);
@@ -58,33 +62,42 @@ export default function ProjectColumnDropdown({
         )}
       >
         <div className="overflow-hidden">
-          <div className="grid gap-5 pb-6 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-end">
-            <div className="space-y-4">
+          <div className="grid gap-6 pb-6">
+            <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
               <p className="max-w-3xl text-base leading-7 text-muted-foreground">
                 {description}
               </p>
 
-              <ul className="flex flex-wrap gap-2" aria-label={`${title} stack`}>
-                {stack.map((item) => (
-                  <li
-                    key={item}
-                    className="border bg-background px-2.5 py-1 text-xs font-bold uppercase tracking-wide"
-                  >
-                    {item}
-                  </li>
-                ))}
-              </ul>
+              {href ? (
+                <a
+                  href={href}
+                  className="inline-flex w-fit items-center gap-2 border px-3 py-2 text-sm font-bold transition-colors hover:bg-primary hover:text-primary-foreground focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
+                >
+                  View project
+                  <ExternalLink aria-hidden="true" className="size-4" />
+                </a>
+              ) : null}
             </div>
 
-            {href ? (
-              <a
-                href={href}
-                className="inline-flex w-fit items-center gap-2 border px-3 py-2 text-sm font-bold transition-colors hover:bg-primary hover:text-primary-foreground focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
-              >
-                View project
-                <ExternalLink aria-hidden="true" className="size-4" />
-              </a>
-            ) : null}
+            <div
+              className="grid gap-3 sm:grid-cols-2"
+              aria-label={`${title} screenshots`}
+            >
+              {screenshots.map((screenshot) => (
+                <div
+                  key={`${screenshot.src}-${screenshot.alt}`}
+                  className="flex aspect-[16/10] items-center justify-center border bg-card p-6"
+                >
+                  <Image
+                    src={screenshot.src}
+                    alt={screenshot.alt}
+                    width={800}
+                    height={500}
+                    className="max-h-full max-w-full object-contain"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

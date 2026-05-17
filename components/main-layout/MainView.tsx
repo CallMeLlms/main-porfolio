@@ -6,7 +6,10 @@ const projects = [
     status: "Ongoing" as const,
     description:
       "A personal portfolio foundation built around a simple one-page structure and expandable project notes.",
-    stack: ["Next.js", "React", "Tailwind CSS", "shadcn"],
+    screenshots: [
+      { src: "/window.svg", alt: "Portfolio System screenshot placeholder" },
+      { src: "/globe.svg", alt: "Portfolio System responsive view placeholder" },
+    ],
     href: "#",
   },
   {
@@ -14,7 +17,10 @@ const projects = [
     status: "Completed" as const,
     description:
       "A structured archive concept for collecting finished builds, experiments, and technical notes in one place.",
-    stack: ["TypeScript", "UI Systems", "Content"],
+    screenshots: [
+      { src: "/file.svg", alt: "Project Archive screenshot placeholder" },
+      { src: "/window.svg", alt: "Project Archive detail view placeholder" },
+    ],
     href: "#",
   },
   {
@@ -22,14 +28,18 @@ const projects = [
     status: "Ongoing" as const,
     description:
       "A compact interface prototype focused on dense information, reusable components, and clear interaction states.",
-    stack: ["React", "Components", "Data UI"],
+    screenshots: [
+      { src: "/window.svg", alt: "Dashboard Prototype screenshot placeholder" },
+    ],
   },
   {
     title: "API Toolkit",
     status: "Completed" as const,
     description:
       "A backend-oriented helper layer for organizing request handlers, shared utilities, and integration boundaries.",
-    stack: ["Node.js", "APIs", "Utilities"],
+    screenshots: [
+      { src: "/file.svg", alt: "API Toolkit screenshot placeholder" },
+    ],
   },
 ];
 
@@ -38,9 +48,9 @@ export default function MainView() {
     <main className="min-h-screen">
       <nav
         aria-label="Primary"
-        className="fixed inset-x-0 top-0 z-20 border-b bg-background/95 px-4 py-3 backdrop-blur sm:px-8"
+        className="border-b bg-background px-4 py-3 sm:px-8"
       >
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4">
+        <div className="flex items-center justify-between gap-4">
           <a
             href="#intro"
             className="text-sm font-bold uppercase tracking-wide text-foreground"
@@ -67,10 +77,10 @@ export default function MainView() {
 
       <section
         id="intro"
-        className="flex min-h-screen items-center border-b px-4 pt-20 sm:px-8"
+        className="flex min-h-screen items-center justify-center border-b px-4 py-20 sm:px-8"
       >
-        <div className="mx-auto w-full max-w-6xl">
-          <h1 className="max-w-4xl text-5xl font-black leading-[0.95] tracking-normal sm:text-7xl lg:text-8xl">
+        <div className="w-full">
+          <h1 className="text-center text-5xl font-black leading-[0.95] tracking-normal sm:text-7xl lg:text-8xl">
             [NAME], a full stack developer
           </h1>
         </div>
@@ -80,7 +90,7 @@ export default function MainView() {
         id="projects"
         className="flex min-h-screen items-center px-4 py-24 sm:px-8"
       >
-        <div className="mx-auto w-full max-w-6xl">
+        <div className="w-full">
           <div className="mb-8 flex items-end justify-between gap-4 border-b pb-4">
             <h2 className="text-3xl font-black sm:text-5xl">Projects</h2>
             <p className="text-sm font-medium text-muted-foreground">

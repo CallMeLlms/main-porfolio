@@ -93,13 +93,13 @@ export const projects: Project[] = [
         height: 859,
       },
       {
-        src: "/png/Batum2.png",
+        src: "/png/batum2.png",
         alt: "screenshot placeholder",
         width: 484,
         height: 872,
       },
       {
-        src: "/png/Batum3.png",
+        src: "/png/batum3.png",
         alt: "screenshot placeholder",
         width: 487,
         height: 859,

@@ -97,6 +97,7 @@ export default function ProjectColumnDropdown({
                     width={screenshot.width}
                     height={screenshot.height}
                     sizes="(max-width: 767px) calc(100vw - 2rem), (max-width: 1279px) 50vw, 33vw"
+                    unoptimized
                     className="h-auto max-h-[70svh] w-auto max-w-full object-contain"
                   />
                 </div>

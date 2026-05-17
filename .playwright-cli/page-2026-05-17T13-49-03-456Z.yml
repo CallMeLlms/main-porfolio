@@ -1,0 +1,79 @@
+- generic [active] [ref=e1]:
+  - main [ref=e3]:
+    - navigation "Primary" [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]: Llams
+        - generic [ref=e7]:
+          - link "Github" [ref=e8] [cursor=pointer]:
+            - /url: https://github.com/CallMeLlms
+          - link "LinkedIn" [ref=e9] [cursor=pointer]:
+            - /url: https://ph.linkedin.com/in/justine-llamera-4107842a3
+    - generic [ref=e11]:
+      - heading "J ustine L lamera" [level=1] [ref=e12]:
+        - generic [ref=e13]:
+          - generic [ref=e14]: J
+          - generic [ref=e15]: ustine
+        - generic [ref=e16]:
+          - generic [ref=e17]: L
+          - generic [ref=e18]: lamera
+      - paragraph [ref=e19]: Full Stack Developer
+    - generic [ref=e21]:
+      - generic [ref=e23]:
+        - heading "P" [level=2] [ref=e24]
+        - heading "rojects" [level=2] [ref=e25]
+      - generic [ref=e26]:
+        - article [ref=e27]:
+          - button "MathSync Development 2026" [ref=e28]:
+            - generic [ref=e29]:
+              - generic [ref=e30]: MathSync
+              - generic [ref=e31]: Development
+              - generic [ref=e32]: "2026"
+            - img [ref=e33]
+          - generic [ref=e35]:
+            - paragraph [ref=e37]: 4th year capstone project. Lead Mobile Developer for a capstone from Oct 2025 to May 2026, building a cross-platform React Native and Expo app with Zustand, SQLite, AsyncStorage, Axios.
+            - generic "MathSync screenshots" [ref=e38]:
+              - img "MathSync sign up screen" [ref=e40]
+              - img "MathSync app screen" [ref=e42]
+        - article [ref=e43]:
+          - button "National Health Workforce Registry (NHWR) Internship 2026" [ref=e44]:
+            - generic [ref=e45]:
+              - generic [ref=e46]: National Health Workforce Registry (NHWR)
+              - generic [ref=e47]: Internship
+              - generic [ref=e48]: "2026"
+            - img [ref=e49]
+          - generic [ref=e51]:
+            - paragraph [ref=e53]: Software Developer Intern at Moodlearning from Oct 2025 to Apr 2026, contributing 500 hours to a government healthcare workforce registry with Laravel, JavaScript, Blade, and MariaDB.
+            - generic "National Health Workforce Registry (NHWR) screenshots" [ref=e54]:
+              - img "Project Archive screenshot placeholder" [ref=e56]
+              - img "Project Archive detail view placeholder" [ref=e58]
+        - article [ref=e59]:
+          - button "BatumBAKAL Development 2026" [ref=e60]:
+            - generic [ref=e61]:
+              - generic [ref=e62]: BatumBAKAL
+              - generic [ref=e63]: Development
+              - generic [ref=e64]: "2026"
+            - img [ref=e65]
+          - generic [ref=e67]:
+            - paragraph [ref=e69]: Full-stack fitness management product focused on backend architecture, secure JWT authentication, and mobile-first workout program engineering with Node.js, Express, PostgreSQL, Prisma, React Native, and Expo.
+            - generic "BatumBAKAL screenshots" [ref=e70]:
+              - img "screenshot placeholder" [ref=e72]
+              - img "screenshot placeholder" [ref=e74]
+              - img "screenshot placeholder" [ref=e76]
+        - article [ref=e77]:
+          - button "Bloggemi Development 2025" [ref=e78]:
+            - generic [ref=e79]:
+              - generic [ref=e80]: Bloggemi
+              - generic [ref=e81]: Development
+              - generic [ref=e82]: "2025"
+            - img [ref=e83]
+          - generic [ref=e85]:
+            - paragraph [ref=e87]: Small fun project meant to generally learn about react, gemini and supabase funamentals stuff. Currenly un-maintained back when everything was made with love <3
+            - generic "Bloggemi screenshots" [ref=e88]:
+              - img "screenshot placeholder" [ref=e90]
+              - img "screenshot placeholder" [ref=e92]
+            - link "View project" [ref=e93] [cursor=pointer]:
+              - /url: https://bloggemi.vercel.app/
+              - text: View project
+              - img [ref=e94]
+  - button "Open Next.js Dev Tools" [ref=e103] [cursor=pointer]:
+    - img [ref=e104]

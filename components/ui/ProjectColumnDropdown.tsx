@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 
 type ProjectColumnDropdownProps = {
   title: string;
-  status: "Ongoing" | "Completed";
+  status: string;
   description: string;
   screenshots: {
     src: string;

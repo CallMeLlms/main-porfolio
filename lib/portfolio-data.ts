@@ -1,4 +1,4 @@
-export type ProjectStatus = "Ongoing" | "Completed";
+export type ProjectStatus = string;
 
 export type ProjectScreenshot = {
   src: string;
@@ -23,53 +23,56 @@ export const portfolioName = "Llams";
 export const navigationItems: NavigationItem[] = [
   {
     label: "Github",
-    href: "#",
+    href: "https://github.com/CallMeLlms",
   },
   {
     label: "LinkedIn",
-    href: "#",
+    href: "https://ph.linkedin.com/in/justine-llamera-4107842a3",
   },
 ];
 
 export const projects: Project[] = [
   {
-    title: "Portfolio System",
-    status: "Ongoing",
+    title: "MathSync",
+    status: "Development",
     description:
-      "A personal portfolio foundation built around a simple one-page structure and expandable project notes.",
+      "4th year capstone project. Lead Mobile Developer for a capstone from Oct 2025 to May 2026, building a cross-platform React Native and Expo app with Zustand, SQLite, AsyncStorage, Axios.",
     screenshots: [
-      { src: "/window.svg", alt: "Portfolio System screenshot placeholder" },
-      { src: "/globe.svg", alt: "Portfolio System responsive view placeholder" },
+      { src: "/png/MathSync-SignUp.png", alt: "MathSync sign up screen" },
+      { src: "/png/MathSync.png", alt: "MathSync app screen" },
     ],
-    href: "#",
+    // href: "#",
   },
   {
-    title: "Project Archive",
-    status: "Completed",
+    title: "National Health Workforce Registry (NHWR)",
+    status: "Internship",
     description:
-      "A structured archive concept for collecting finished builds, experiments, and technical notes in one place.",
+      "Software Developer Intern at Moodlearning from Oct 2025 to Apr 2026, contributing 500 hours to a government healthcare workforce registry with Laravel, JavaScript, Blade, and MariaDB.",
     screenshots: [
       { src: "/file.svg", alt: "Project Archive screenshot placeholder" },
       { src: "/window.svg", alt: "Project Archive detail view placeholder" },
     ],
-    href: "#",
+    // href: "#",
   },
   {
-    title: "Dashboard Prototype",
-    status: "Ongoing",
+    title: "BatumBAKAL",
+    status: "Development",
     description:
-      "A compact interface prototype focused on dense information, reusable components, and clear interaction states.",
+      "Full-stack fitness management product focused on backend architecture, secure JWT authentication, and mobile-first workout program engineering with Node.js, Express, PostgreSQL, Prisma, React Native, and Expo.",
     screenshots: [
-      { src: "/window.svg", alt: "Dashboard Prototype screenshot placeholder" },
+      { src: "/png/batum1.png", alt: "screenshot placeholder" },
+      { src: "/png/batum2.png", alt: "screenshot placeholder" },
+      { src: "/png/batum3.png", alt: "screenshot placeholder" },
+      { src: "/png/batum4.png", alt: "screenshot placeholder" },
     ],
   },
-  {
-    title: "API Toolkit",
-    status: "Completed",
-    description:
-      "A backend-oriented helper layer for organizing request handlers, shared utilities, and integration boundaries.",
-    screenshots: [
-      { src: "/file.svg", alt: "API Toolkit screenshot placeholder" },
-    ],
-  },
+  // {
+  //   title: "API Toolkit",
+  //   status: "Completed",
+  //   description:
+  //     "A backend-oriented helper layer for organizing request handlers, shared utilities, and integration boundaries.",
+  //   screenshots: [
+  //     { src: "/file.svg", alt: "API Toolkit screenshot placeholder" },
+  //   ],
+  // },
 ];

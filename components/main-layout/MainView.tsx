@@ -19,7 +19,7 @@ export default function MainView() {
         <div className="flex flex-row gap-2 justify-between sm:flex-row sm:items-center sm:justify-between sm:gap-4">
           <div className="flex items-center justify-center">
             <a
-              className={`${fontSerif.className} text-sm font-bold  tracking-wide text-foreground`}
+              className={`${fontSerif.className} px-3 py-1.5 text-sm font-bold  tracking-wide text-foreground`}
             >
               {portfolioName}
             </a>

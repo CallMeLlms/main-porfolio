@@ -16,12 +16,14 @@ export default function MainView() {
         aria-label="Primary"
         className="border-b bg-background/70 px-4 py-3 backdrop-blur-[1px] sm:px-8"
       >
-        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
-          <a
-            className={`${fontSerif.className} text-sm font-bold uppercase tracking-wide text-foreground`}
-          >
-            {portfolioName}
-          </a>
+        <div className="flex flex-row gap-2 justify-between sm:flex-row sm:items-center sm:justify-between sm:gap-4">
+          <div className="flex items-center justify-center">
+            <a
+              className={`${fontSerif.className} text-sm font-bold  tracking-wide text-foreground`}
+            >
+              {portfolioName}
+            </a>
+          </div>
 
           <div
             className={`${fontSerif.className} flex flex-wrap items-center gap-2 text-sm font-medium`}
@@ -44,27 +46,27 @@ export default function MainView() {
         className="flex min-h-screen items-center justify-center px-4 py-20 sm:px-8"
       >
         <div className="flex w-full max-w-6xl flex-col items-center gap-4">
-          <h1 className="flex max-w-full flex-col items-center justify-center gap-1 text-center leading-none tracking-normal sm:flex-row sm:items-end sm:gap-0">
+          <h1 className="flex max-w-full flex-row items-center justify-center gap-1 text-center leading-none tracking-normal sm:flex-row sm:items-end sm:gap-0">
             <span className="flex items-end justify-center">
               <span
-                className={`${fontScript.className} text-[clamp(4.25rem,22vw,6rem)] font-black leading-[0.9] sm:text-7xl lg:text-8xl`}
+                className={`${fontScript.className} text-6xl font-black leading-[0.9] sm:text-8xl lg:text-8xl`}
               >
                 J
               </span>
               <span
-                className={`${fontSerif.className} text-[clamp(2.75rem,14vw,4.5rem)] leading-[0.95] sm:text-7xl lg:text-5xl`}
+                className={`${fontSerif.className}  text-3xl leading-[0.95] sm:text-4xl lg:text-5xl`}
               >
                 ustine
               </span>
             </span>
             <span className="flex items-end justify-center">
               <span
-                className={`${fontScript.className} text-[clamp(4.25rem,22vw,6rem)] font-black leading-[0.9] sm:text-7xl lg:text-8xl`}
+                className={`${fontScript.className} text-6xl font-black leading-[0.9] sm:text-8xl lg:text-8xl`}
               >
                 L
               </span>
               <span
-                className={`${fontSerif.className} text-[clamp(2.75rem,14vw,4.5rem)] leading-[0.95] sm:text-7xl lg:text-5xl`}
+                className={`${fontSerif.className}  text-3xl leading-[0.95] sm:text-4xl lg:text-5xl`}
               >
                 lamera
               </span>
@@ -72,7 +74,7 @@ export default function MainView() {
           </h1>
 
           <p
-            className={`${fontSerif.className} max-w-full px-2 text-center text-[clamp(2.15rem,11vw,3.75rem)] leading-[0.95] tracking-normal sm:text-7xl lg:text-4xl`}
+            className={`${fontSerif.className} max-w-full text-xl px-2 text-center leading-[0.95] tracking-normal sm:text-2xl lg:text-4xl`}
           >
             Full Stack Developer
           </p>

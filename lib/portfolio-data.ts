@@ -62,7 +62,7 @@ export const projects: Project[] = [
     status: "Internship",
     year: "2026",
     description:
-      "Software Developer Intern at Moodlearning from Oct 2025 to Apr 2026, contributing 500 hours to a government healthcare workforce registry with Laravel, JavaScript, Blade, and MariaDB.",
+      "Software Developer Intern from Oct 2025 to Apr 2026, contributing 500 hours to a healthcare workforce registry with Laravel, JavaScript, Blade, and MariaDB.",
     screenshots: [
       {
         src: "/file.svg",

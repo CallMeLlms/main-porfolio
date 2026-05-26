@@ -46,7 +46,7 @@ export default function ProjectColumnDropdown({
       >
         <span className="flex min-w-0 flex-col gap-1">
           <span
-            className={`${fontSans.className} break-words text-xl leading-tight sm:text-4xl`}
+            className={`${fontSans.className} text-xl leading-tight sm:text-2xl xl:text-1xl`}
           >
             {title}
           </span>
@@ -77,7 +77,7 @@ export default function ProjectColumnDropdown({
         <div className="overflow-hidden">
           <div className="grid gap-5 pb-6 sm:gap-6">
             <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
-              <p className={`${fontSans.className} w-full text-sm leading-7 text-muted-foreground sm:text-xl`}>
+              <p className={`${fontSans.className} w-full text-sm leading-7 text-muted-foreground sm:text-xl xl:text-1xl`}>
                 {description}
               </p>
             </div>
@@ -98,7 +98,7 @@ export default function ProjectColumnDropdown({
                     height={screenshot.height}
                     sizes="(max-width: 767px) calc(100vw - 2rem), (max-width: 1279px) 50vw, 33vw"
                     unoptimized
-                    className="h-auto max-h-[70svh] w-auto max-w-full object-contain"
+                    className="h-auto max-h-[50svh] w-auto max-w-full object-contain"
                   />
                 </div>
               ))}

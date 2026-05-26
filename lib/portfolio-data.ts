@@ -105,6 +105,7 @@ export const projects: Project[] = [
         height: 859,
       },
     ],
+    href: "https://github.com/CallMeLlms/BatumBAKAL-Mobile"
   },
    {
     title: "Bloggemi",
@@ -127,6 +128,22 @@ export const projects: Project[] = [
       },
     ],
     href: 'https://bloggemi.vercel.app/',
+  },
+  {
+    title: "Weather API",
+    status: "Development",
+    year: "2025",
+    description:
+      "The beginning, project that started it all. <3",
+    screenshots: [
+      {
+        src: "/png/Weather-Project.png",
+        alt: "screenshot placeholder",
+        width: 1080,
+        height: 1920,
+      },
+    ],
+    href: 'https://weather-project-rose-five.vercel.app/',
   },
   // {
   //   title: "API Toolkit",

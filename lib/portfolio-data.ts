@@ -62,7 +62,7 @@ export const projects: Project[] = [
     status: "Development",
     year: "2026",
     description: "A dataset that came from kaggle, transformed the dataset using python numpy and used PowerBI for the dashboard presentation. Modifed the project to support web dashboard analytics using fastAPI backend and vite react frontend framework <3",
-    // href: "#"
+    href: "https://github.com/CallMeLlms/Stud-Performance-Dashboard"
   },
    {
     title: "Bloggemi",

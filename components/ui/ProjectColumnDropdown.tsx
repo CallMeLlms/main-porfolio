@@ -14,12 +14,6 @@ type ProjectColumnDropdownProps = {
   year: string;
   status: string;
   description: string;
-  screenshots: {
-    src: string;
-    alt: string;
-    width: number;
-    height: number;
-  }[];
   href?: string;
 };
 
@@ -28,7 +22,6 @@ export default function ProjectColumnDropdown({
   status,
   year,
   description,
-  screenshots,
   href,
 }: ProjectColumnDropdownProps) {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,7 +35,7 @@ export default function ProjectColumnDropdown({
         aria-expanded={isOpen}
         aria-controls={contentId}
         onClick={() => setIsOpen((current) => !current)}
-        className="group flex min-h-18 w-full items-start justify-between gap-4 px-0 py-5 text-left transition-colors hover:bg-muted/40 focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50 sm:items-center"
+        className="group flex min-h-18 w-full items-start justify-between gap-4 px-0 py-2 text-left transition-colors hover:bg-muted/40 focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50 sm:items-center"
       >
         <span className="flex min-w-0 flex-col gap-1">
           <span
@@ -77,31 +70,9 @@ export default function ProjectColumnDropdown({
         <div className="overflow-hidden">
           <div className="grid gap-5 pb-6 sm:gap-6">
             <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
-              <p className={`${fontSans.className} w-full text-sm leading-7 text-muted-foreground sm:text-xl xl:text-1xl`}>
+              <p className={`${fontSans.className} w-full text-sm leading-7 text-muted-foreground sm:text-xl xl:text-[18px]`}>
                 {description}
               </p>
-            </div>
-
-            <div
-              className="grid gap-3 md:grid-cols-2 xl:grid-cols-3"
-              aria-label={`${title} screenshots`}
-            >
-              {screenshots.map((screenshot) => (
-                <div
-                  key={`${screenshot.src}-${screenshot.alt}`}
-                  className="flex min-h-48 w-full items-center justify-center overflow-hidden border bg-card p-3 sm:min-h-64 sm:p-5 lg:min-h-80 lg:p-6"
-                >
-                  <Image
-                    src={screenshot.src}
-                    alt={screenshot.alt}
-                    width={screenshot.width}
-                    height={screenshot.height}
-                    sizes="(max-width: 767px) calc(100vw - 2rem), (max-width: 1279px) 50vw, 33vw"
-                    unoptimized
-                    className="h-auto max-h-[50svh] w-auto max-w-full object-contain"
-                  />
-                </div>
-              ))}
             </div>
 
               {href ? (
@@ -113,8 +84,7 @@ export default function ProjectColumnDropdown({
                   <ExternalLink aria-hidden="true" className="size-4" />
                 </a>
               ) : null}
-    
-          
+
           </div>
         </div>
       </div>

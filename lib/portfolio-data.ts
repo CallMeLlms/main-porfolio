@@ -40,7 +40,7 @@ export const projects: Project[] = [
     status: "Development",
     year: "2026",
     description: "4th year capstone project. Lead Mobile Developer for a capstone from Oct 2025 to May 2026, building a cross-platform React Native and Expo app with Zustand, SQLite, AsyncStorage, Axios.",
-    // href: "#",
+    href: "https://github.com/CallMeLlms/MathSync",
   },
   {
     title: "BatumBAKAL",

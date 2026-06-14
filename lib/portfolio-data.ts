@@ -51,10 +51,10 @@ export const projects: Project[] = [
   },
 
   {
-    title: "National Health Workforce Registry (NHWR)",
+    title: "Moodlearning (Internship)",
     status: "Internship",
     year: "2026",
-    description: "Software Developer Intern from Oct 2025 to Apr 2026, contributing 500 hours to a healthcare workforce registry with Laravel, JavaScript, Blade, and MariaDB.",
+    description: "Software Developer Intern from Oct 2025 to Apr 2026, contributing 500 hours to a full stack application with Laravel, JavaScript, Blade, and MariaDB.",
     // href: "#",
   },
     {

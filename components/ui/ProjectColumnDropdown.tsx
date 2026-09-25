@@ -39,14 +39,14 @@ export default function ProjectColumnDropdown({
       >
         <span className="flex min-w-0 flex-col gap-1">
           <span
-            className={`${fontSans.className} text-xl leading-tight sm:text-2xl xl:text-1xl`}
+            className={`${fontSans.className} text-[clamp(1rem,2.25vw,1rem)] leading-tight`}
           >
             {title}
           </span>
-          <span className={`${fontSans.className} text-xs font-bold uppercase tracking-wide text-muted-foreground`}>
+          <span className={`${fontSans.className} text-[clamp(0.60rem,2.25vw,0rem)] font-bold uppercase tracking-wide text-muted-foreground`}>
             {status}
           </span>
-          <span className={`${fontSans.className} text-xs font-bold uppercase tracking-wide text-muted-foreground`}>
+          <span className={`${fontSans.className} text-[clamp(0.60rem,2.25vw,0rem)] font-bold uppercase tracking-wide text-muted-foreground`}>
             {year}
           </span>
         </span>
@@ -70,7 +70,7 @@ export default function ProjectColumnDropdown({
         <div className="overflow-hidden">
           <div className="grid gap-5 pb-6 sm:gap-6">
             <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
-              <p className={`${fontSans.className} w-full text-sm leading-7 text-muted-foreground sm:text-xl xl:text-[18px]`}>
+              <p className={`${fontSans.className} w-full text-[clamp(0.90rem,2.25vw,0rem)] leading-7 text-muted-foreground`}>
                 {description}
               </p>
             </div>
@@ -78,7 +78,11 @@ export default function ProjectColumnDropdown({
               {href ? (
                 <a
                   href={href}
-                  className="inline-flex min-h-11 w-full items-center justify-center gap-2 border px-3 py-2 text-sm font-bold transition-colors hover:bg-primary hover:text-primary-foreground focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50 sm:w-fit"
+                  className="inline-flex min-h-11 w-full items-center 
+                  justify-center gap-2 border px-3 py-2 text-[clamp(0.60rem,2.25vw,0rem)] 
+                  font-bold transition-colors hover:bg-primary hover:text-primary-foreground focus-visible:outline-none focus-visible:ring-3
+                   focus-visible:ring-ring/50 sm:w-fit
+                   "
                 >
                   View project
                   <ExternalLink aria-hidden="true" className="size-4" />

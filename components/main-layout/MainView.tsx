@@ -80,59 +80,42 @@ export default function MainView() {
         </div>
       </section>
 
-      <section id="footer" className="flex px-4 py-20 sm:py-24">
-        <div className="flex w-full  justify-between">
+      <section id="footer" className="flex px-4 ">
+        <div className="flex w-full justify-between text-[clamp(0.1rem,1.5vw,1.2rem)]">
+
+          <span className="flex items-end justify-center">
+  
+            <span
+              className={`${fontSerif.className}`}
+            >
+              {"[Currently]"}
+            </span>
+          </span>
+
           <span className="flex items-end justify-center">
             <span
-              className={`${fontScript.className} text-[clamp(3rem,12vw,9rem)] font-black leading-[0.9]`}
+              className={`${fontSerif.className}`}
             >
-              C
-            </span>
-            <span
-              className={`${fontSerif.className} text-[clamp(1.25rem,2.75vw,2.25rem)]`}
-            >
-              urrently
+              {"[Undergoing]"}
             </span>
           </span>
 
-          <span className="flex items-end justify-center ml-12 sm:ml-36">
+          <span className="flex items-end justify-center">
             <span
-              className={`${fontScript.className} text-[clamp(3rem,8vw,5rem)] font-black leading-[0.9]`}
+              className={`${fontSerif.className}`}
             >
-              U
-            </span>
-            <span
-              className={`${fontSerif.className}  text-[clamp(1.25rem,2.75vw,2.25rem)] leading-[0.95]`}
-            >
-              ndergoing
+              {"[Major]"}
             </span>
           </span>
 
-          <span className="flex items-end justify-center ml-6 sm:ml-16">
+          <span className="flex items-end justify-center">
             <span
-              className={`${fontScript.className} text-[clamp(3rem,8vw,5rem)] font-black leading-[0.9]`}
+              className={`${fontSerif.className}`}
             >
-              M
-            </span>
-            <span
-              className={`${fontSerif.className}  text-[clamp(1.25rem,2.75vw,2.25rem)] leading-[0.95]`}
-            >
-              ajor
+              {"[Changes]"}
             </span>
           </span>
 
-          <span className="flex items-end justify-center ml-9 sm:ml-28">
-            <span
-              className={`${fontScript.className} text-[clamp(3rem,8vw,5rem)] font-black leading-[0.9]`}
-            >
-              C
-            </span>
-            <span
-              className={`${fontSerif.className}  text-[clamp(1.25rem,2.75vw,2.25rem)] leading-[0.95]`}
-            >
-              changes
-            </span>
-          </span>
         </div>
       </section>
 

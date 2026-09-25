@@ -12,35 +12,6 @@ const fontScript = Mea_Culpa({ subsets: ["latin"], weight: "400" });
 export default function MainView() {
   return (
     <main className="min-h-screen">
-      <nav
-        aria-label="Primary"
-        className="border-b bg-background/70 px-4 py-3 backdrop-blur-[1px] sm:px-8"
-      >
-        <div className="flex flex-row gap-2 justify-between sm:flex-row sm:items-center sm:justify-between sm:gap-4">
-          <div className="flex items-center justify-center">
-            <a
-              className={`${fontSerif.className} px-3 py-1.5 text-sm font-bold  tracking-wide text-foreground`}
-            >
-              {portfolioName}
-            </a>
-          </div>
-
-          <div
-            className={`${fontSerif.className} flex flex-wrap items-center gap-2 text-sm font-medium`}
-          >
-            {navigationItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="min-h-9 px-3 py-1.5"
-              >
-                {item.label}
-              </a>
-            ))}
-          </div>
-        </div>
-      </nav>
-
       <section
         id="intro"
         className="flex min-h-screen items-center justify-center px-4 py-20 sm:px-8"
